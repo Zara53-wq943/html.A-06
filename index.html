@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Admission Form</title>
+</head>
+<body>
+
+    <h1 align="center">Saylani Mass IT Training (SMIT)</h1>
+    <h2 align="center">Admission Form</h2>
+    <hr>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend><h3>Personal Information</h3></legend>
+
+            <!-- Student's Full Name -->
+            <p>
+                <label for="fullName">Student's Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Muhammad Ali" required>
+            </p>
+
+            <!-- Father's Name -->
+            <p>
+                <label for="fatherName">Father's Name:</label><br>
+                <input type="text" id="fatherName" name="fatherName" placeholder="e.g. Ahmed Khan" required>
+            </p>
+
+            <!-- Email -->
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </p>
+
+            <!-- Phone Number -->
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="0300-1234567" required>
+            </p>
+
+            <!-- Date of Birth -->
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <!-- Gender -->
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </p>
+
+            <!-- Address -->
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your full residential address..." required></textarea>
+            </p>
+
+            <!-- City -->
+            <p>
+                <label for="city">City:</label><br>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Faisalabad">Faisalabad</option>
+                    <option value="Peshawar">Peshawar</option>
+                    <option value="Quetta">Quetta</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Academic & Course Details Section -->
+        <fieldset>
+            <legend><h3>Academic & Course Details</h3></legend>
+
+            <!-- Course Selection -->
+            <p>
+                <label for="course">Select Course:</label><br>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="Web & Mobile App Development">Web & Mobile App Development</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="AI & Chatbot Development">AI & Chatbot Development</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                </select>
+            </p>
+
+            <!-- Qualification -->
+            <p>
+                <label for="qualification">Highest Qualification:</label><br>
+                <select id="qualification" name="qualification" required>
+                    <option value="" disabled selected>Select qualification</option>
+                    <option value="Matriculation">Matriculation</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Master's">Master's</option>
+                </select>
+            </p>
+
+            <!-- Upload Picture/File -->
+            <p>
+                <label for="picture">Upload Picture / CNIC Document:</label><br>
+                <input type="file" id="picture" name="picture" accept="image/*,.pdf" required>
+            </p>
+
+            <!-- Additional Field Covered in Class (Computer Proficiency Checkboxes) -->
+            <p>
+                <label>Computer Skills / Knowledge (Select all that apply):</label><br>
+                <input type="checkbox" id="basic_comp" name="skills" value="Basic Computer">
+                <label for="basic_comp">Basic Computer Operation</label><br>
+                
+                <input type="checkbox" id="html_css" name="skills" value="HTML/CSS">
+                <label for="html_css">HTML / CSS Basics</label><br>
+                
+                <input type="checkbox" id="none" name="skills" value="Beginner">
+                <label for="none">None (Beginner)</label>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Form Submission -->
+        <div>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+
+</body>
+</html>
